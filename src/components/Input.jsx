@@ -1,6 +1,6 @@
 'use client';
 import { useSession } from 'next-auth/react';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { app } from '../firebase';
 
 import {
@@ -40,14 +40,14 @@ export default function Input() {
         alt='user-img'
         className='h-11 w-11 rounded-full cursor-pointer hover:brightness-95'
       />
-      <div className='w-full divide-y divide-gray-200'>
-      <textarea
-            className='w-full border-none outline-none tracking-wide min-h-[50px] text-gray-700 '
+      <div className='w-full'>
+      <input
+            className='bg-zinc-600 border border-yellow-500 rounded-3xl text-sm w-full px-4 py-2 placeholder-yellow-500'
             placeholder='Have any tips?'
             rows='2'
             value={text}
             onChange={(e) => setText(e.target.value)}
-        ></textarea>
+        ></input>
         <div className='flex items-center justify-between pt-2.5'>
         <button
             disabled={text.trim() === '' || postLoading}
