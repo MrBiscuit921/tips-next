@@ -28,6 +28,7 @@ export default function Input() {
         });
         setPostLoading(false);
         setText('');
+        location.reload();
     };
 
     if (!session) return null;
