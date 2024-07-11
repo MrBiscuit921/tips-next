@@ -2,6 +2,10 @@
 import { signIn, signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { HiHome, HiDotsHorizontal } from 'react-icons/hi';
+import logo from '../images/logo.png';
+import Image from 'next/image'
+
+console.log(logo);
 
 
 export default function Sidebar() {
@@ -11,7 +15,7 @@ export default function Sidebar() {
     <div className=' flex flex-col p-3 justify-between h-screen'>
         <div className='flex flex-col gap-4 p-3'>
       <Link href='/'>
-        <img src='src\app\favicon.ico' className='w-16 h-16 cursor-pointer p-3 hover:bg-gray-200 rounded-full transition-all duration-200 ' />
+        <img src='src\images\logo.png' alt='Logo'className='w-16 h-16 cursor-pointer p-3 hover:bg-gray-200 rounded-full transition-all duration-200 ' />
       </Link>
       <Link
         href='/'
