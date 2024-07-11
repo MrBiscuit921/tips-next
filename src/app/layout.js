@@ -11,6 +11,8 @@ export const metadata = {
   description: "A place where you can share your tips with others",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function RootLayout({ children }) {
   return (
     <SessionWrapper>
