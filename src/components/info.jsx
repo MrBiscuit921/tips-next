@@ -1,5 +1,7 @@
+'use client';
+
 export default function Info() {
   return (
-    <div>info</div>
-  )
+    <div>Info</div>
+  );
 }
