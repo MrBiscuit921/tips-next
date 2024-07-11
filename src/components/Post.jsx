@@ -17,7 +17,7 @@ export default function Post({ post, id }) {
             <Link href={`/posts/${id}`}>
                 <p className='text-gray-800 text-sm my-3'>{post?.text}</p>
             </Link>
-            <Icons id={id} />
+            <Icons id={id} uid={post.uid} />
         </div>
     </div>
   )
