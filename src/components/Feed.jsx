@@ -23,5 +23,6 @@ import {
           <Post key={post.id} post={post} id={post.id} />
         ))}
       </div>
+      
     );
   }
