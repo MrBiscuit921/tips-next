@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
-export default function ads() {
+export default function Ads() {
     useEffect(() => {
         try {
           (window.adsbygoogle = window.adsbygoogle || []).push({});
